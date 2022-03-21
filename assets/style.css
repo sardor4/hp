@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Charm:wght@700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url(img/harry.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+li{
+    list-style: none;
+}
+.header__title{
+    font-family: 'Charm', cursive;
+    font-weight: 700;
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+    user-select: none;
+}
+.nav{
+    background: #111;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#search {
+    display: block;
+    width: 90px;
+    transition: width ease 0.2s, opacity ease 0.4s;
+    border-radius: 32px;
+    box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 0.25), inset 0px 1px 3px rgba(0, 0, 0, 0.7), 0px 1px 0px rgba(255, 255, 255, 0.03);
+    text-align: left;
+    font: 13px "Helvetica Neue", Arial, sans-serif;
+    padding: 4px 10px;
+    background: rgb(243, 243, 243);
+    border: none;
+    margin-bottom: 0;
+    outline: none;
+    opacity: 0.8;
+    color: #888;
+}
+#search:focus {
+    width: 120px;
+    opacity: 1.0; 
+}
+.nav-list{
+    display: flex;
+}
+.category{
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    padding: 5px;
+    cursor: pointer;
+    color: rgb(233, 233, 233);
+    border: 1px solid rgb(233, 233, 233);
+    background: transparent;
+    margin: 0 20px;
+    transition: all .3s ease 0s;
+}
+.category:hover{
+    background: white;
+    color: #111;
+}
+.main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.cards__content{
+    display: grid;
+    grid-template-columns: repeat(2,500px);
+    width: 58%;
+    gap: 30px;
+    padding: 30px;
+    background: rgb(225, 225, 225);
+}
+.card__item{
+    display: flex;
+    width: 500px;
+    height: 400px;
+    box-shadow: 0 0 4px 2px rgb(175, 175, 175);
+}
+.left{
+    width: 50%;
+}
+.right{
+    width: 50%;
+}
+.card__text{
+    font-family: 'Kanit', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: rgb(44, 44, 44);
+}
+.card-span{
+    font-weight: 700;
+    color: rgb(20, 20, 20);
+}
+.card-name{
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    color: rgb(56, 56, 56);
+    margin-top: 2px;
+    display: flex;
+    flex-direction: column;
+}
+.card-name::before{
+    content: '';
+    width: 210px;
+    height: 2px;
+
+    margin-bottom: 10px;
+    margin-left: 10px;
+    background: rgb(56, 56, 56);
+}
+.card-image{
+    width: 230px;
+    height: 300px;
+}
+
+.footer{
+    position: relative;
+    bottom: 0;
+    right: 0;
+    background: #111;
+    padding: 50px 300px;
+}
+.footer__title{
+    font-family: 'Charm', cursive;
+    font-weight: 700;
+    font-size: 30px;
+    color: white;
+}
+.footer__text{
+    font-family: 'Kanit', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.72);
+}
+
+.card-name.highlight {
+    transition: background .4s ease-in-out;
+    background: #ffff4f;
+    border-color: #E9DC51;
+}
